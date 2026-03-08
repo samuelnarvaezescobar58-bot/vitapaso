@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>VitaPaso</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<div class="navbar">
+
+<div class="logo">
+🌱 <span>VitaPaso</span>
+</div>
+
+<div class="menu">
+<button class="active">Inicio</button>
+<button>Mis Hábitos</button>
+<button>Progreso</button>
+</div>
+
+</div>
+
+
+<div class="container">
+
+<h1 class="title">✨ VitaPaso</h1>
+
+<div class="assistantCard">
+
+<div class="assistantHeader">
+
+<div class="avatar"></div>
+
+<div>
+<h3>Tu Asistente VitaPaso</h3>
+<p id="assistantText">Hola 👋 ¿En qué puedo ayudarte hoy?</p>
+</div>
+
+</div>
+
+<div class="progressSection">
+
+<p>Progreso del día</p>
+
+<div class="progressBar">
+<div id="progressFill"></div>
+</div>
+
+<p id="progressText">0/6</p>
+
+</div>
+
+</div>
+
+
+<h2>Hábitos de Hoy</h2>
+
+<div class="habitGrid">
+
+<div class="habitCard" onclick="toggleHabit(this)">💧 Beber 8 vasos de agua</div>
+<div class="habitCard" onclick="toggleHabit(this)">🚶 Caminar 30 minutos</div>
+<div class="habitCard" onclick="toggleHabit(this)">😴 Dormir 8 horas</div>
+<div class="habitCard" onclick="toggleHabit(this)">🧘 Meditar 10 minutos</div>
+<div class="habitCard" onclick="toggleHabit(this)">🥗 Comer frutas</div>
+<div class="habitCard" onclick="toggleHabit(this)">🤸 Estiramientos</div>
+
+</div>
+
+
+<div class="chatBox">
+
+<div id="chatMessages"></div>
+
+<div class="chatInput">
+
+<input id="userInput" placeholder="Pregúntale algo al asistente...">
+
+<button onclick="sendMessage()">Enviar</button>
+
+</div>
+
+</div>
+
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
